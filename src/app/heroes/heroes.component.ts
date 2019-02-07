@@ -6,8 +6,8 @@ import {
   ElementRef
 } from "@angular/core";
 import { Injector } from "@angular/core";
-import { Render } from "./render-react";
-import { HeroesContainer } from "./heroes-container";
+import { Render } from "./react/render-react";
+import { HeroesContainer } from "./react/heroes-container";
 
 @Component({
   selector: "app-heroes",
@@ -19,8 +19,6 @@ export class HeroesComponent implements OnInit, OnDestroy {
 
   @ViewChild("reactContainer")
   reactContainer: ElementRef;
-
-  con = document.getElementById("react-container");
 
   ngOnInit() {
     Render.init(

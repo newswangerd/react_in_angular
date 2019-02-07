@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Hero } from "../hero";
+import { Hero } from "../../hero";
 
 import { Injector } from "@angular/core";
-import { HeroService } from "../hero.service";
+import { HeroService } from "../../hero.service";
 import { Heroes } from "./heroes-view";
 
 interface IProps {
